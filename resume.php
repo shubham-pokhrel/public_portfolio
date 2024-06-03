@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <script src="libs/pdfjs/pdf.js"></script>
+    <script src="libs/pdfjs/pdf.mjs"></script>
     <style>
         body {
             display: flex;
@@ -34,7 +34,7 @@
         const url = 'files/Shubham_Pokhrel_CV.pdf'; // Path to your PDF file
         
         const pdfjsLib = window['pdfjs-dist/build/pdf'];
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'libs/pdfjs/pdf.worker.js';
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'libs/pdfjs/pdf.worker.mjs';
 
         const container = document.getElementById('pdf-container');
 
